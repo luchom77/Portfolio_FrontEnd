@@ -13,7 +13,10 @@
     />
   </head>
   <body>
-    <div class="container" style="background-color: rgb(255, 255, 255)">
+    <div
+      class="container"
+      style="height: 100%; background-color: rgb(255, 255, 255)"
+    >
       <header>
         <nav class="navbar bg-light fixed-top">
           <div class="container-fluid">
@@ -48,7 +51,7 @@
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
+                      >Login</a
                     >
                   </li>
                   <li class="nav-item">
@@ -106,19 +109,28 @@
         </nav>
       </header>
       <section id="seccion">
-        <div id="Home" style="text-align: center; margin-bottom: 80px ;margin-top: 80px"">
+        <div
+          id="Home"
+          style="text-align: center; margin-bottom: 80px; margin-top: 80px"
+        >
           <img src="imagenes/imagen_prueba1.jpg" class="img-fluid" />
         </div>
         <div
           id="About me"
-          style="margin-left: 300px; text-align: left; margin-bottom: 80px"
+          style="
+            text-align: left;
+            margin-bottom: 80px;
+            text-size-adjust: 200px;
+            align-content: center;
+          "
+          class="row"
         >
           <img
             src="imagenes/foto_cv.png"
-            style="height: 200px"
-            class="img-thumbnail"
+            style="width: 20%; margin-left: 0px"
+            class="col-md-4"
           />
-          <p>
+          <p class="col-md-8" style="text-align: justify left">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -133,24 +145,95 @@
         <div id="Education" style="text-align: center; margin-bottom: 80px">
           <ul class="list-group">
             <li class="list-group-item active" aria-current="true">
-              An active item
+              High School
             </li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">Collage Grade: Industrial Design</li>
+            <li class="list-group-item">Collage Grade: Informatics</li>
             <li class="list-group-item">A fourth item</li>
             <li class="list-group-item">And a fifth one</li>
           </ul>
         </div>
         <div id="Skills" style="text-align: center; margin-bottom: 80px">
-          <div class="d-flex justify-content-between">
-            <li>Clasification</li>
-            <li>Image</li>
-            <li>Description</li>
-            <li>Level</li>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div class="row">
+            <li class="col-sm-2" style="background-color: rgb(0, 136, 255)">
+              Clasification
+            </li>
+            <li class="col-sm-2" style="background-color: rgb(255, 0, 0)">
+              Image
+            </li>
+            <li class="col-sm-5" style="background-color: rgb(12, 209, 28)">
+              Description
+            </li>
+            <li class="col-sm-3" style="background-color: rgb(196, 13, 171)">
+              Level
+            </li>
+          </div> -->
+        <div
+          id="Proyects"
+          style="text-align: center; margin-bottom: 80px; border-style: outset"
+        >
+          <h1 id="prueba">Proyects: Coming soon</h1>
+        </div>
+        <div id="Contact">
+          <form style="text-align: left">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+          </form>
+          <div style="text-align: right">
+            <button type="button" class="btn btn-outline-secondary">
+              Send
+            </button>
           </div>
         </div>
-        <div id="Proyects" style="text-align: center"></div>
-        <div id="Contact" style="text-align: center"></div>
       </section>
       <footer></footer>
     </div>
