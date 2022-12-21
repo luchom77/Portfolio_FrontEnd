@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi CV</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- preguntar porque no me detecta mi hoja de estilos -->
-    <link rel="stylesheet2" href="styles.css" />
+    <!-- preguntar porque no me detecta mi hoja de estilos 
+    resp: orden de los css-->
     <link
       rel="stylesheet"
       href="./CSS/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
     <style media="screen">
       * {
         margin: 0;
@@ -134,6 +131,8 @@
         }
       }
     </style>
+    <!--<script async>renderiza y ejecuta en paralelo</script>
+    <script defer> renderiza en paralelo pero espera a que termine de cargar el html para ejecutar</script>-->
   </head>
   <body>
     <div
@@ -141,7 +140,7 @@
       style="height: 100%; background-color: rgb(255, 255, 255)"
     >
       <header>
-        <nav class="navbar bg-light fixed-top">
+        <nav class="navbar bg-light fixed-top" style="position: sticky; top: 0">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Moore Luciano</a>
             <button
@@ -234,27 +233,17 @@
       <section id="seccion">
         <div
           id="Home"
-          style="text-align: center; margin-bottom: 80px; margin-top: 80px"
+          style="text-align: center; margin-bottom: 80px; margin-top: 10px"
         >
           <img src="imagenes/imagen_prueba1.jpg" class="img-fluid" />
         </div>
-        <div
-          id="About me"
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 80px;
-          "
-          ;
-          class="row"
-        >
+        <div id="About me" class="about-me">
           <img
             src="imagenes/foto_cv.png"
             style="width: 35; margin-left: 0px"
             class="col-md-4"
           />
-          <p class="col-md-8" style="text-align: justify left">
+          <p class="col-md-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
