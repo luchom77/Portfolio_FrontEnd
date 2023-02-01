@@ -1,2 +1,2 @@
-# Portfolio_FrontEnd
+# Portfolio_FrontEnd (Estático)
 repositorio Frontend
